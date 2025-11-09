@@ -25,6 +25,18 @@ A Python project that extracts building connectivity networks from CityGML data 
 
 ---
 
+## Sample Data
+
+The project processes CityGML files containing building data. Below are examples of the 3D building models used in this analysis:
+
+![Building 1 - M-71797336-A](docs/images/building1_sample.png)
+*Sample building model from CityGML data (M-71797336-A.gml)*
+
+![Building 2 - M-97972571-A](docs/images/building2_sample.png)
+*Sample building model from CityGML data (M-97972571-A.gml)*
+
+---
+
 ## Project Structure
 
 ```
