@@ -1,0 +1,65 @@
+{
+  "user_profiles": [
+    {
+      "profile_id": "able_bodied_adult",
+      "name": "Able-bodied Adult",
+      "description": "Standard adult with no mobility limitations",
+      "walking_speed_mps": 1.4,
+      "max_distance_m": 1000,
+      "barrier_types": [],
+      "needs": ["standard_access"],
+      "priority": 1
+    },
+    {
+      "profile_id": "wheelchair_user",
+      "name": "Wheelchair User",
+      "description": "Person using wheelchair for mobility",
+      "walking_speed_mps": 1.0,
+      "max_distance_m": 800,
+      "barrier_types": ["stairs", "narrow_paths", "steep_slopes"],
+      "needs": ["ramp_access", "wide_paths", "elevator_access"],
+      "priority": 2
+    },
+    {
+      "profile_id": "elderly_person",
+      "name": "Elderly Person",
+      "description": "Person aged 65+ with reduced mobility",
+      "walking_speed_mps": 0.8,
+      "max_distance_m": 500,
+      "barrier_types": ["stairs", "uneven_surfaces", "long_distances"],
+      "needs": ["rest_areas", "safe_paths", "clear_signage"],
+      "priority": 2
+    },
+    {
+      "profile_id": "person_with_visual_impairment",
+      "name": "Person with Visual Impairment",
+      "description": "Person with visual impairment or blindness",
+      "walking_speed_mps": 0.6,
+      "max_distance_m": 600,
+      "barrier_types": ["obstacles", "unclear_paths", "poor_lighting"],
+      "needs": ["tactile_guidance", "clear_signage", "audio_guidance"],
+      "priority": 2
+    },
+    {
+      "profile_id": "person_with_mobility_aid",
+      "name": "Person with Mobility Aid",
+      "description": "Person using walking stick, crutches, or walker",
+      "walking_speed_mps": 0.7,
+      "max_distance_m": 400,
+      "barrier_types": ["stairs", "uneven_surfaces", "narrow_paths"],
+      "needs": ["wide_paths", "handrails", "rest_areas"],
+      "priority": 2
+    }
+  ],
+  "barrier_penalties": {
+    "stairs": 1000,
+    "narrow_paths": 500,
+    "steep_slopes": 800,
+    "uneven_surfaces": 300,
+    "obstacles": 400,
+    "unclear_paths": 200,
+    "poor_lighting": 150,
+    "long_distances": 100
+  }
+}
+

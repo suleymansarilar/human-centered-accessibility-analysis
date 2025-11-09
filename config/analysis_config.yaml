@@ -1,0 +1,66 @@
+# Human-Centered Accessibility Analysis Configuration
+
+# Network Analysis Parameters
+network:
+  distance_threshold_m: 500
+  connection_strategy: "distance_based"  # Options: distance_based, delaunay, road_aware
+  edge_weight_type: "distance"  # Options: distance, time, normalized
+
+# Accessibility Analysis Parameters
+accessibility:
+  distance_threshold_m: 500
+  walking_speed_mps: 1.4
+  area_weight: true
+  network_reachability: true
+
+# User Profile Analysis Parameters
+user_profiles:
+  enabled: true
+  profile_file: "config/user_profiles.json"
+  barrier_detection: true
+  comparative_analysis: true
+
+# Flow Simulation Parameters
+flow_simulation:
+  enabled: true
+  scenario_file: "config/flow_scenarios.json"
+  flow_distribution: "equal_split"  # Options: equal_split, weighted_split
+  congestion_model: "linear"  # Options: linear, bpr
+  congestion_threshold: 100
+
+# Emergency Scenarios Parameters
+emergency_scenarios:
+  enabled: true
+  scenario_file: "config/emergency_scenarios.json"
+  min_alternative_routes: 2
+  evacuation_time_limit_minutes: 30
+  route_capacity_per_minute: 50
+
+# Visualization Parameters
+visualization:
+  network_graph:
+    node_size: "degree"  # Options: degree, area, accessibility
+    node_color: "betweenness"  # Options: betweenness, closeness, accessibility
+    edge_color: "distance"  # Options: distance, weight, flow
+    edge_width: "weight"  # Options: weight, flow, distance
+  heatmap:
+    interpolation: "idw"  # Options: idw, kriging, nearest
+    color_scheme: "viridis"  # Options: viridis, plasma, inferno
+  interactive: true
+  basemap: "openstreetmap"  # Options: openstreetmap, cartodb
+
+# Output Parameters
+output:
+  format: "png"  # Options: png, pdf, svg
+  dpi: 300
+  interactive_format: "html"  # Options: html, json
+  report_format: "markdown"  # Options: markdown, pdf, html
+
+# Data Processing Parameters
+data_processing:
+  coordinate_system: "EPSG:4326"  # WGS84
+  projection: "EPSG:3857"  # Web Mercator for visualization
+  distance_calculation: "haversine"  # Options: haversine, euclidean
+  parallel_processing: false
+  chunk_size: 1000
+

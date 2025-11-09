@@ -1,0 +1,67 @@
+{
+  "flow_scenarios": [
+    {
+      "scenario_id": "rush_hour_morning",
+      "name": "Rush Hour (Morning)",
+      "description": "Morning commute from residential to work areas",
+      "time_period": "08:00-09:00",
+      "origin_building_types": ["residential", "apartment"],
+      "destination_building_types": ["office", "commercial", "industrial"],
+      "flow_intensity": "high",
+      "flow_multiplier": 1.5,
+      "congestion_factor": 1.3
+    },
+    {
+      "scenario_id": "lunch_break",
+      "name": "Lunch Break",
+      "description": "Lunch time movement from offices to restaurants",
+      "time_period": "12:00-13:00",
+      "origin_building_types": ["office", "commercial"],
+      "destination_building_types": ["restaurant", "cafe", "commercial"],
+      "flow_intensity": "medium",
+      "flow_multiplier": 1.2,
+      "congestion_factor": 1.1
+    },
+    {
+      "scenario_id": "evening_return",
+      "name": "Evening Return",
+      "description": "Evening commute from work to residential areas",
+      "time_period": "17:00-18:00",
+      "origin_building_types": ["office", "commercial", "industrial"],
+      "destination_building_types": ["residential", "apartment"],
+      "flow_intensity": "high",
+      "flow_multiplier": 1.5,
+      "congestion_factor": 1.3
+    },
+    {
+      "scenario_id": "weekend_leisure",
+      "name": "Weekend Leisure",
+      "description": "Weekend movement to recreational and commercial areas",
+      "time_period": "10:00-16:00",
+      "origin_building_types": ["residential", "apartment"],
+      "destination_building_types": ["commercial", "recreation", "park"],
+      "flow_intensity": "medium",
+      "flow_multiplier": 1.1,
+      "congestion_factor": 1.0
+    },
+    {
+      "scenario_id": "school_hours",
+      "name": "School Hours",
+      "description": "Movement to and from educational facilities",
+      "time_period": "07:00-08:00, 15:00-16:00",
+      "origin_building_types": ["residential", "apartment"],
+      "destination_building_types": ["school", "university"],
+      "flow_intensity": "medium",
+      "flow_multiplier": 1.3,
+      "congestion_factor": 1.2
+    }
+  ],
+  "flow_model": {
+    "type": "shortest_path",
+    "distribution": "equal_split",
+    "congestion_model": "linear",
+    "base_walking_speed_mps": 1.4,
+    "congestion_threshold": 100
+  }
+}
+
