@@ -32,6 +32,10 @@ data/output/*.png
 data/output/*.json
 data/input/*.gml
 
+# Sample images are included
+!docs/images/*.png
+!docs/images/*.jpg
+
 # Keep directory structure
 !data/processed/.gitkeep
 !data/output/.gitkeep
