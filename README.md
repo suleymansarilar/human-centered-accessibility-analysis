@@ -112,6 +112,13 @@ python scripts/run_pipeline.py --input "data/input/*.gml" --output data/output/ 
 - **Config:** JSON (user profiles, scenarios), YAML (analysis config)
 - **Output:** CSV, JSON, PNG
 
+### Key Concepts
+- **Network Analysis:** Building connectivity graphs to understand spatial relationships
+- **Accessibility Metrics:** Distance-based and network-based accessibility scoring
+- **Flow Simulation:** Simulating human movement patterns across the network
+- **Optimization:** Finding optimal paths and identifying critical network nodes
+- **Data-Driven Design:** Using computational analysis to inform infrastructure planning
+
 ---
 
 ## Author
@@ -125,6 +132,18 @@ GitHub: https://github.com/suleymansarilar
 ## License
 
 This project is open source and available under the MIT License.
+
+---
+
+## Potential Applications
+
+This project demonstrates computational approaches that can be applied to:
+
+- **Infrastructure Planning:** Analyzing building connectivity to inform urban design decisions
+- **Accessibility Assessment:** Evaluating how different user groups experience urban spaces
+- **Flow Optimization:** Understanding movement patterns to improve circulation design
+- **Emergency Planning:** Identifying evacuation routes and critical infrastructure nodes
+- **Data-Informed Design:** Using network analysis to support evidence-based design decisions
 
 ---
 
