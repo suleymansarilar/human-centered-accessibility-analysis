@@ -1,0 +1,7 @@
+neighborhood,accessibility_score,avg_path_distance,transit_nodes,population,notes
+Downtown,82,450,12,15000,"Central business district with mixed-use development"
+Riverside,68,720,6,8500,"Residential area with limited transit access"
+Hilltop,55,1100,3,4200,"Suburban neighborhood, hilly terrain"
+Greenfield,75,580,9,11200,"New development with planned infrastructure"
+Old Town,62,890,5,6800,"Historic district, narrow streets"
+Midtown,79,520,10,12800,"Commercial hub with good connectivity"
